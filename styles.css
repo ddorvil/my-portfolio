@@ -1,24 +1,34 @@
 /*Background Image and text style for Homepage*/
 
+
 .image {
 
-  background-image: url('../images/landingPic.jpg');
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(5px);
+ /* background-repeat: no-repeat;
+  background-size: cover;*/
+/*  filter: blur(5px);
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
-  -ms-filter: blur(5px);
+  -ms-filter: blur(5px);*/
 
 }
 
+html {
+  /*width: 100%;
+  height: 100%;
+  background-position:*/
+  /*background-image: url(back.jpg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  */
+
+
+}
 .text { 
 /*color: #eeeeee;*/
-color: black;
-font-weight: bold;
+/*color: black;
+*/font-weight: bold;
 border: 3px solid #cccccc;
 position: absolute;
 top: 50%;
@@ -30,11 +40,35 @@ padding: 20px;
 text-align: center;
 }
 
+body {
+  font-family: "Arial";
+  color: black;
+}
 
+.page-bg {
+  background: url(back.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+/*Nav Help*/
 
 header {
   overflow: hidden;
-  background: #fff;
+  /*background: #fff;*/
 }
 
 header a, header label {
