@@ -46,7 +46,7 @@ body {
 }
 
 .page-bg {
-  background: url(back.jpg);
+  background: url('../images/back.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
