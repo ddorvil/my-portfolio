@@ -1,0 +1,254 @@
+/*Nav Help*/
+
+/*Nav Help*/
+
+header {
+  overflow: hidden;
+  /*background: #fff;*/
+}
+
+header a, header label {
+  display: block;
+  padding: 20px;
+  color: #222;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+header a:hover, header label:hover { color: #aaa; }
+
+header label {
+  float: right;
+  padding: 18px 20px;
+  cursor: pointer;
+}
+
+header label:after {
+  content: "\2261";
+  font-size: 1.8em;
+}
+
+.logo {
+  float: left;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+  
+nav {
+  float: right;
+  max-height: 0;
+  width: 100%;
+  -webkit-transition: max-height 0.3s; 
+     -moz-transition: max-height 0.3s;
+       -o-transition: max-height 0.3s;
+          transition: max-height 0.3s;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+   padding-bottom: 10px;
+}
+  
+nav li {
+  display: block;
+  text-align: center;
+}
+  
+nav a {
+  padding: 10px;
+  width: 100%;
+}
+
+#nav { display: none; }
+
+#nav:checked ~ nav {
+  max-height: 200px; /* This can be anything bigger than your nav height. The transition duration works with this */
+}
+
+@media only screen and (min-width: 700px) {
+  
+  header label { display: none; }
+  
+  nav {
+    width: auto;
+    max-height: none;
+  }
+  
+  nav ul {
+    padding: 0;
+    padding-right: 10px;
+  }
+  
+  nav li {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  header nav a {
+    display: inline-block;
+    padding: 20px 10px;
+    width: auto;
+  }
+  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 400vw;
+ 
+}
+.one {
+  background: #efdefe;
+}
+.two {
+  background: #a3f3d3;
+}
+.three {
+  background: #0bbaa0;
+}
+.four {
+  background: #00dfdf;
+}
+
+/*Home Page styles*/
+
+/*Horizontal scroll*/
+
+/*h2 {
+  color: white;
+}
+*/
+/*.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  
+  .card {
+    display: inline-block;
+  }
+}
+*/
+/*.scrolling-wrapper-flexbox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  
+  .card {
+    flex: 0 0 auto;
+    margin-right: 3px;
+  }
+}
+
+.card {
+  border: 2px solid red;
+  width: 500px;
+  height: 500px;
+  background: black;
+}
+
+.scrolling-wrapper, .scrolling-wrapper-flexbox {
+  height: 500px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}*/
+
+/*:root {
+  --gutter: 20px;
+}
+
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+}
+
+.app > * {
+  grid-column: 2 / -2;
+}
+
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+.hs {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: 10px repeat(6, calc(50% - var(--gutter) * 2)) 10px;
+  grid-template-rows: minmax(150px, 1fr);
+  
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.5 * var(--gutter));
+}
+
+.hs:before,
+.hs:after {
+  content: '';
+}
+
+/* Hide scrollbar */
+/*.hide-scroll {
+  overflow-y: hidden;
+  margin-bottom: calc(-.1 * var(--gutter));
+}*/
+
+
+/* Demo styles */
+/*
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #456173;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.app {
+  width: 375px;
+  height: 667px;
+  background: #DBD0BC;
+  overflow-y: scroll;
+}
+
+.hs > li,
+.item {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}*/
