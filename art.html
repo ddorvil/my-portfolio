@@ -21,7 +21,9 @@
      <li><a href="index.html">Home</a></li>
       <li><a href="art.html">Work</a></li>
     <li><a href="about-me.html">About Me</a></li>
+    <li><a href="other.html">Art</a></li>
     <li><a href="resume.html">Resume</a></li>
+
     </ul>
   </nav> 
   
@@ -29,16 +31,7 @@
 
 <section class="new-container">
 
-
-  <section>
-    <button class="tablinks block" onclick="openCity(event, 'London')" id = "defaultOpen">UX Portfolio</button>
-  </section>
-
-  <!-- Tab links -->
-
-
-<div id="London" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'">x</span>
+  <h2 style="padding-top: 50px; color: grey;">Selected Work</h2>
   <div class="grid-container">
 	  
 
@@ -47,10 +40,16 @@
         <img src="images/otw_image.png">
       </div>
        <div class="content">
-        <h4>Social Media Side Project</h4>
-          <p>Used CSS, HTML, Bootstrap, Flask to design and create website in a group of 3. Some designs were negatively altered when uploaded to the server.</p> 
+        <h4>On The Wall</h4>
+          <p>On The Wall is a secret sharing platform where anyone, primarily students are able to express themselves anonymously.</p> 
             <form action="https://on-the-wall.herokuapp.com/" method="get" target="_blank">
-              <button>View</button>
+              <div class="pill"> CSS</div>
+              <div class="pill">HTML</div>
+              <div class="pill">Flask</div>
+              <div class="pill">Python</div>
+                <br>
+                <br>
+              <button class="view">View</button>
             </form>
            </div>
     </div>
@@ -60,10 +59,15 @@
       </div>
        <div class="content">
         <h4>Google Design Challenge</h4>
-          <p>Skills/Tools:Adobe XD</p>  
-          <!-- <form action="http://csc174.org/assignment05/ddorvil/" method="get" target="_blank"> -->
+        <p>
+          This week long challenge focused on an app that helps university students around the country find mentors and mentees with ease. 
+        </p>
+       
             <form action="https://docs.google.com/presentation/d/1uaHxdZV3yAJa43wOP2ZSJBoNvxkkNJjt4iWO-hxH7_8/edit?usp=sharing" method="get" target="_blank">
-              <button>View</button>
+              <div class="pill"> Adobe XD</div>
+              <br>
+              <br>
+              <button class="view">View</button>
             </form>
            </div> </div>
 	  
@@ -73,9 +77,17 @@
       </div>
        <div class="content">
         <h4>Student Government Website</h4>
-          <p>Used CSS, HTML, Bootstrap, Wordpress, PHP to update and maintain website.</p> 
+          <p>As the Web Developer Assistant, my goal was to make weekly updates for the student government at the university.</p>
             <form action="http://sa.rochester.edu/sa/" method="get" target="_blank">
-              <button>View</button>
+
+               <div class="pill"> CSS</div>
+              <div class="pill">HTML</div>
+              <div class="pill">Bootsrap</div>
+              <div class="pill">Wordpress</div>
+              <div class="pill">PHP</div>
+              <br>
+              <br>
+              <button class="view">View</button>
             </form>
            </div>
     </div>
@@ -85,56 +97,5 @@
   </div>
 </div>
 </div>
- </div>
-  <section>
-    <button class="tablinks block" onclick="openCity(event, 'Paris')">Writing Samples</button>
-  </section>
-
-<div id="Paris" class="tabcontent">
-  <span onclick="this.parentElement.style.display='none'">x</span>
-  <div class="grid-container">
-    <div class="card">
-      <div class="bg-img">
-        <img src="images/ct.png">
-      </div>
-       <div class="content">
-        <h4>Newspaper Article</h4>
-          <p>This is an article I wrote on the campus climate that was published in my school's newspaper</p> 
-          <form action="http://www.campustimes.org/2019/09/22/identity-clubs-and-commitment-to-diversity/" method="get" target="_blank">
-            <button>Read More</button> 
-          </form>
-          </div>
-    </div>
-
-  </div>
-</div>
-
-</section>
-
-<script>
-  function openCity(evt, cityName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
-
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
 </body>
 </html>
