@@ -27,18 +27,19 @@ figcaption {
 
 /*Design Help
 */
-* {
+/** {
     box-sizing: border-box;
     padding: 0;
-    /*margin: 0;*/
-}
+    margin: 0;
+}*/
 
 body {
     /*background: #7189bf;*/
-    font-family: 'Roboto', sans-serif;
+font-family: 'Poppins', sans-serif;
     transition: background 1s ease;
     margin: 0;
-    text-align: center;
+
+  /*  text-align: center;*/
 }
 
 /*.jumbotron { 
@@ -66,7 +67,7 @@ body {
   /*position:fixed;*/
  /* width:100%;
   bottom:50%;*/
-  display:block;
+/*  display:block;*/
 }
 
 #flip {
@@ -112,7 +113,7 @@ p {
   width:100%;
   bottom:30px;
   font-size:12px;
-  color:#999;
+color: #283054;
   margin-top:75px;
 }
 
@@ -165,7 +166,7 @@ p {
 
 /*Nav Help*/
 
-header {
+/*header {
   overflow: hidden;
   background-color: #fff;
 }
@@ -256,7 +257,7 @@ nav a {
   }
   
 }
-
+*/
 
 
 .jumbotron h2 {
