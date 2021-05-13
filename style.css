@@ -1,6 +1,8 @@
 /*tabs*/
 /* Style the tab */
-
+*{
+  font-family: 'Poppins', sans-serif;
+}
 .block {
   display: block;
   width: 25%;
@@ -125,20 +127,20 @@ body {
 
 /*Nav Help*/
 
-header {
+/*header {
   overflow: hidden;
-  /*background: #fff;*/
-}
+  background: #fff;
+}*/
 
-header a, header label {
+/*header a, header label {
   display: block;
   padding: 20px;
   color: #222;
   text-decoration: none;
   line-height: 20px;
-}
+}*/
 
-header a:hover, header label:hover { color: #aaa; }
+/*header a:hover, header label:hover { color: #aaa; }
 
 header label {
   float: right;
@@ -165,9 +167,9 @@ nav {
      -moz-transition: max-height 0.3s;
        -o-transition: max-height 0.3s;
           transition: max-height 0.3s;
-}
+}*/
 
-nav ul {
+/*nav ul {
   margin: 0;
   padding: 0;
    padding-bottom: 10px;
@@ -186,12 +188,12 @@ nav a {
 #nav { display: none; }
 
 #nav:checked ~ nav {
-  max-height: 200px; /* This can be anything bigger than your nav height. The transition duration works with this */
-}
+  max-height: 200px; 
+}*/
 
 @media only screen and (min-width: 700px) {
   
-  header label { display: none; }
+ /* header label { display: none; }
   
   nav {
     width: auto;
@@ -214,7 +216,7 @@ nav a {
     width: auto;
   }
   
-}
+}*/
 
 /*About page css code*/
 
@@ -240,7 +242,7 @@ nav a {
 }
 
 .right-half {
-  background-color: white;
+/*  background-color: white;*/
   flex: 1;
   padding: 1rem;
 }
