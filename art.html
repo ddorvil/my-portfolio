@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width-device-width, initial-scale= 1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<title>Dominique Dorvil</title>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -28,73 +29,146 @@
   
 </header>
 
-<section class="new-container">
+ <section class="new-container">
 
   <h2 style="padding-top: 50px; color: grey;">UX Work</h2>
-  <div class="grid-container">
-	  
+  <div style="display: flex;
+  justify-content: center;
+  align-items: center;">
 
-	  <div class="card">
-      <div class="bg-img">
-        <img src="images/otw_image.png">
+<!-- First Row -->
+  <div class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="images/otw_image.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title" style="font-weight: bold;">On The Wall</h5>
+        <p class="card-text">On The Wall is a secret sharing platform where anyone, primarily students are able to express themselves anonymously.</p>
+
+        <ul class="list-inline">
+          <li class="pill">CSS</li>
+          <li class="pill">HTML</li>
+          <li class="pill">Flask</li>
+          <li class="pill">Python</li>
+          <li class="pill">Bootstrap</li>
+        </ul>
       </div>
-       <div class="content">
-        <h4>On The Wall</h4>
-          <p>On The Wall is a secret sharing platform where anyone, primarily students are able to express themselves anonymously.</p> 
-            <form action="https://on-the-wall.herokuapp.com/" method="get" target="_blank">
-              <div class="pill"> CSS</div>
-              <div class="pill">HTML</div>
-              <div class="pill">Flask</div>
-              <div class="pill">Python</div>
+      <div class="card-footer  bg-transparent">
+         <a class=" text-right"
+         href="https://on-the-wall.herokuapp.com/" class="btn btn-primary" >View</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="images/sarochester.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title" style="font-weight: bold;">Student Government Website</h5>
+        <p class="card-text">As the Web Developer Assistant, my goal was to make weekly updates (information and design maintenance) for my school's student government.</p>
+
+       <ul class="list-inline">
+          <li class="pill">CSS</li>
+          <li class="pill">HTML</li>
+          <li class="pill">Wordpress</li>
+          <li class="pill">PHP</li>
+          <li class="pill">Bootstrap</li>
+        </ul>
+
+      </div>
+        <div class="card-footer  bg-transparent">
+         <a class=" text-right"
+         href="http://sa.rochester.edu/sa/" class="btn btn-primary" >View</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.mjRNbN1m8_pMPt_LO2-vHgHaCg%26pid%3DApi&f=1">
+      <div class="card-body">
+        <h5 class="card-title" style="font-weight: bold;">Google Design Challenge</h5>
+        <p class="card-text"> This week long challenge focused on an app that helps university students around the country find mentors and mentees with ease. </p>
+
+         <ul class="list-inline">
+          <li class="pill">Adobe XD</li>
+         
+        </ul>
+
+      </div>
+         <div class="card-footer  bg-transparent">
+           <a class=" text-right"
+           href="https://docs.google.com/presentation/d/1uaHxdZV3yAJa43wOP2ZSJBoNvxkkNJjt4iWO-hxH7_8/edit?usp=sharing" class="btn btn-primary" >View</a>
+         </div>
+    </div>
+  </div>
+
+    <!-- End of Photo Grid
+ <section class="new-container">
+
+    <h2 style="padding-top: 50px; color: grey;">UX Work</h2>
+    <div class="grid-container">
+  	  
+
+  	  <div class="card">
+        <div class="bg-img">
+          <img src="images/otw_image.png">
+        </div>
+         <div class="content">
+          <h4>On The Wall</h4>
+            <p>On The Wall is a secret sharing platform where anyone, primarily students are able to express themselves anonymously.</p> 
+              <form action="https://on-the-wall.herokuapp.com/" method="get" target="_blank">
+                <div class="pill"> CSS</div>
+                <div class="pill">HTML</div>
+                <div class="pill">Flask</div>
+                <div class="pill">Python</div>
+                  <br>
+                  <br>
+                <button class="view">View</button>
+              </form>
+             </div>
+      </div>
+  	    <div class="card">
+        <div class="bg-img">
+           <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.mjRNbN1m8_pMPt_LO2-vHgHaCg%26pid%3DApi&f=1">
+        </div>
+         <div class="content">
+          <h4>Google Design Challenge</h4>
+          <p>
+            This week long challenge focused on an app that helps university students around the country find mentors and mentees with ease. 
+          </p>
+         
+              <form action="https://docs.google.com/presentation/d/1uaHxdZV3yAJa43wOP2ZSJBoNvxkkNJjt4iWO-hxH7_8/edit?usp=sharing" method="get" target="_blank">
+                <div class="pill"> Adobe XD</div>
                 <br>
                 <br>
-              <button class="view">View</button>
-            </form>
-           </div>
-    </div>
-	    <div class="card">
-      <div class="bg-img">
-         <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.mjRNbN1m8_pMPt_LO2-vHgHaCg%26pid%3DApi&f=1">
-      </div>
-       <div class="content">
-        <h4>Google Design Challenge</h4>
-        <p>
-          This week long challenge focused on an app that helps university students around the country find mentors and mentees with ease. 
-        </p>
-       
-            <form action="https://docs.google.com/presentation/d/1uaHxdZV3yAJa43wOP2ZSJBoNvxkkNJjt4iWO-hxH7_8/edit?usp=sharing" method="get" target="_blank">
-              <div class="pill"> Adobe XD</div>
-              <br>
-              <br>
-              <button class="view">View</button>
-            </form>
-           </div> </div>
-	  
-	<div class="card">
-      <div class="bg-img">
-        <img src="images/sarochester.png">
-      </div>
-       <div class="content">
-        <h4>Student Government Website</h4>
-          <p>As the Web Developer Assistant, my goal was to make weekly updates for the student government at the university.</p>
-            <form action="http://sa.rochester.edu/sa/" method="get" target="_blank">
+                <button class="view">View</button>
+              </form>
+             </div> </div>
+  	  
+  	<div class="card">
+        <div class="bg-img">
+          <img src="images/sarochester.png">
+        </div>
+         <div class="content">
+          <h4>Student Government Website</h4>
+            <p>As the Web Developer Assistant, my goal was to make weekly updates for the student government at the university.</p>
+              <form action="http://sa.rochester.edu/sa/" method="get" target="_blank">
 
-               <div class="pill"> CSS</div>
-              <div class="pill">HTML</div>
-              <div class="pill">Bootsrap</div>
-              <div class="pill">Wordpress</div>
-              <div class="pill">PHP</div>
-              <br>
-              <br>
-              <button class="view">View</button>
-            </form>
-           </div>
-    </div>
-   
-    
-  </div>
-  </div>
-</div>
-</div>
+                 <div class="pill"> CSS</div>
+                <div class="pill">HTML</div>
+                <div class="pill">Bootsrap</div>
+                <div class="pill">Wordpress</div>
+                <div class="pill">PHP</div>
+                <br>
+                <br>
+                <button class="view">View</button>
+              </form>
+             </div>
+      </div>
+     
+      
+    </div> -->
+  </section>
+
+   <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
