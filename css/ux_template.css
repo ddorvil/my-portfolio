@@ -1,0 +1,70 @@
+.ux_container{
+	max-width: 990px;
+	margin: 0 auto;  /* centers the container */
+  	padding: 0 15px; 
+}
+
+.background_info{
+  float: left;
+/*  width: 40%;*/
+	padding-right: 100px;
+}
+
+.ux_row{
+/*	 content: "";*/
+  display: table;
+  clear: both;
+}
+
+.project_title{
+	font-size: 60px;
+	line-height:0.5em;
+	padding-top: 30px;
+	color: #283054;
+}
+
+h2{
+	font-size: 40px;
+	color: #feca57;
+
+}
+
+
+
+h3{
+/*	text-decoration: underline;*/
+	color: #ff6b6b;
+	font-weight: bold;
+	font-size: 25px;
+
+}
+
+h4{
+	font-weight: bold;
+		text-decoration: underline;
+}
+
+p, ul, div {
+	font-size: 20px;
+}
+
+
+.project_phrase{
+	color: #555555;
+	font-size: 30px;
+	padding-bottom: 10px;
+	line-height:0.5em;
+}
+
+p, ul, h4{
+	color: #283054;
+	
+}
+
+.b_info{
+	color: #555555;
+}
+
+ul {
+	list-style-type: circle;
+}
