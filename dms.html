@@ -10,6 +10,385 @@
       font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
+    }
+
+    .cta-btn {
+      margin: 5px;
+      background-color: #F8CD73;
+      color: #293152;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      float: right;
+    }
+
+    .cta-btn:hover{
+      background-color: #293152;
+      color: #fff;
+    }
+
+li, p {
+  font-size: 20px;
+  color: #293152;
+}
+
+.scroll-arrow {
+ position: absolute;
+  bottom: 20px; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+    header {
+/*      position: relative;*/
+    /*  text-align: center;
+      color: white;
+      padding: 50px;*/
+/*      background: url('hero.jpeg') center/cover no-repeat;*/
+      background-image: url('images/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Set text color to make it visible on the image */
+    font-size: 24px; /* Adjust font size as needed */
+    }
+
+    section {
+      display: inline-block;
+      width: 15%;
+      vertical-align: top;
+/*      align-items: center;*/
+/*      justify-content: center;*/
+      margin: 20px;
+/*      background-color: white;*/
+      padding: 20px;
+     /* border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .container
+   {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+/*    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+    margin-top: -50px;
+    text-align: center;
+   }
+
+   .container2{
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: -50px;
+        }
+
+    h2 {
+      color: #293152;
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container3 {
+  display: grid; /* Define container as a grid */
+  grid-template-columns: repeat(2, 1fr); /* Two columns equal width */
+  gap: 10px; /* Add space between figures */
+
+}
+
+.figure {
+  text-align: center; /* Center content within figure */
+  border-style: solid;
+/*  border-color: #EE7470;*/
+}
+
+.compare{
+/* border-style: solid;
+  border-color: #EE7470;*/
+  justify-content: center;
+}
+
+figcaption {
+  margin-top: 5px; /* Add space between image and caption */
+}
+
+    .circle-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px; /* Adjust this for more or less rounded edges */
+  background-color: #007bff; /* Change this to your desired button color */
+  color: #F8CD73;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;  /* This positions it relative to its container */
+  right: 0; /* Aligns the button to the right */
+  top: 10px; /* Adjust this for desired vertical position */
+}
+
+.circle-button:hover {
+  background-color: #0069d9; /* Change this for a hover effect color */
+}
+  </style>
+</head>
+
+<body>
+  <header>
+
+  </header>
+
+  <div>
+  <div class="scroll-arrow">
+      <iframe src="https://giphy.com/embed/W3MyhCrgfBlXDV349M" pointer-events="none" width="100" height="120" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+</div>
+
+  <div class="container">
+
+        <h1 style="text-align: center; padding-top: 50px; color: #293152; font-size: 65px;"> WEB ANALYTICS ON PRATT'S RELAUNCH</h1>
+
+
+    <section>
+      <h2>DURATION</h2>
+      <ul>
+        <li>Nov → Dec 2023</li>
+      </ul>
+    </section>
+
+      <section>
+      <h2 style="text-align: left;">TOOLS</h2>
+      <ul style="text-align: left;">
+        <li>Google Analytics</li>
+        <li>Google Sheets</li>
+        <li>Looker Studio</li>
+        <li>Figma</li>
+        <li>Benchmarking</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 style="text-align: left;">MEMBERS</h2>
+      <ul style="text-align: left;">
+        <li>Dominique Dorvil</li>
+        <li>Evelyn Mukherjee</li>
+         <li>Leewon Seo</li>
+        <li>Ava Deng</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 style="text-align: left;">MY ROLE</h2>
+      <ul style="text-align: left;">
+        <li>UX Researcher</li>
+        <li>Designer</li>
+      </ul>
+    </section>
+  </div>
+
+
+  <div class="container2">
+    <h2>ABOUT</h2>
+    <p>Pratt Institute, a renowned design school, revamped their 12 year old website and relaunched it this year. Because the redesigned website was released this year, the data we chose to analyze is from January 2023 - October 2023 (when the team started the project). I along with a team of 4 other researchers analyzed the user engagement on the client's requested key pages (News, Events, Daily Hub, Prattfolio) using Google Analytics 4. <b>Our client, Pratt Institute, wanted us to analyze how these pages are working to improve user engagement, and whether or not they are successful in drawing users to Pratt’s program offerings and application details. </b>  I focused on <a href="https://www.pratt.edu/daily-hub/">The Daily Hub</a> which is essentially the current events of all things Pratt Institute. It captures quick snapshots of all accolades of alumni and current students from solo exhibitions, awards, publications, and more! </p>
+
+    <div style="justify-content: right;">
+
+         <a href= "https://docs.google.com/document/d/1neyYb2zfo0nciwRCBSz_KluFqX3ihVYVZjQ1IRVSe5Y/edit?usp=sharing" class="cta-btn">Read Full Report</a>
+
+       <a href= "https://lookerstudio.google.com/reporting/b804ed32-d018-4b08-9560-eee552ff06b7" class="cta-btn">View Dashboard</a>
+
+       <br>
+       <br>
+       <br>
+       <br>
+
+    </div>
+  </div>
+<div style="padding: 20px;">
+
+    <h2>RESEARCH OBJECTIVES</h2>
+    <p style="text-align: center;"> <i><b>How might we increase engagement and time spent on the Daily Hub?</b></i></p>
+    <p style="text-align: center;"><b><i>How might we motivate users to explore Pratt's academic offerings?</b></i></p>
+    <p style="text-align: center;"><b><i>How might we improve conversion rates from Daily Hub visitors to program inquiries?</b></i></p>
+
+
+
+  <h2>PROCESS OVERVIEW & TOOLS</h2>
+   <img style="width: 100%; height: auto;" src="images/Frame.png" alt="Image description">
+
+  <!-- <p>Google Analytics 4: Analyzed user behavior, page views, and engagement metrics.</p>
+  <p>Path Exploration: Identified navigation patterns and user journeys.</p>
+  <p>Benchmarking: Studied similar pages at other design schools.</p>
+   -->
+
+      <h2>FINDINGS & RECOMMENDATIONS</h2>
+
+      <!-- FINDING 1 -->
+       <p style="background-color: #74D9F7; padding: 20px;border-radius: 5px;">🔍 FINDING 1 | Users that visit the Daily Hub are not clicking "Apply" button or exploring program pages but are clicking the <b>external links</b> on the Daily Hub. The Daily Hub only had 97 active users and of those users, only 11 users also had sessions on Program related pages. The Program pages attract a larger audience in 1 month, 15,000 most likely because there is a direct link to checking out the programs of a prospective school. It is clear with the low overlap that the same users are not being reached.</p>
+
+  <div class="container3">
+      <figure>
+        <img class= "compare" src="images/apply_btn.png" alt="Image description">
+        <figcaption style="text-align: center;"> Shows that the majority of the “Apply” button clicks occur on admissions related pages. The mental model makes more sense to apply to a school from their admission’s page. But the mental model for applying to a school from a page that highlights achievements from alumni and current students(Daily Hub) is not as clear. 
+  </figcaption>
+      </figure>
+
+       <figure>
+        <img class= "compare" src="images/segment_overlap.png" alt="Image description">
+        <figcaption style="text-align: center;"> <i>Segment overlap showing how the target audience of the Daily Hub and program pages are not the same.
+   </i>
+  </figcaption>
+      </figure>
+  </div>
+
+    <!-- RECOMMENDATIONS-->
+<p style="background-color: #E8E9EB; padding: 20px;border-radius: 5px;"> 👍 RECOMMENDATION 1-1 | Embed articles from Pratt websites: Keep users within Pratt's domain.</p>
+
+    <p style="background-color: #E8E9EB; padding: 20px;border-radius: 5px;"> 👍 RECOMMENDATION 1-2 | Add clear and contextually relevant CTAs: Guide users towards program pages.</p>
+    <figure>
+        <img style = "justify-content: center; width: 50%;" src="images/embed.png" alt="Image description">
+        <figcaption style="text-align: center;"> <i> Parson's example of adding a link to explore more work from alumni in a specific major. This allows for additional CTAs to encourage users to stay within Parson's domain.
+</i>
+        </figcaption>
+      </figure>
+
+     <p style="background-color: #E8E9EB; padding: 20px;border-radius: 5px;"> 👍 RECOMMENDATION 1-3 | Add clear copy to make the connection between the CTAs and the more clear. Examples are: “Join Our Community” or “Start Your Journey Here” </p>
+ <div class="container3">
+      <figure>
+        <img style = "width: 100%;" class = "compare" src="images/pratt_footer.png" alt="Image description">
+        <figcaption style="text-align: center;"> <i>Mockup of proposed design for Pratt above their footer. </i>
+        </figcaption>
+      </figure>
+       <figure>
+        <img style = "width: 100%;" class = "compare" src="images/parson_footer.png" alt="Image description">
+        <figcaption style="text-align: center;"> <i>Parson’s website has a CTA for visitors on how they can take the next step after finding interesting or inspiring information on their page.</i>
+  </figcaption>
+      </figure>
+
+ </div>
+  
+       <!-- FINDING 2 -->
+         <p style="background-color: #74D9F7; padding: 20px;border-radius: 5px;">🔍 FINDING 2 | Average time spent on the Daily Hub was only <b>36 seconds</b> This bar graph indicates the homepage has the highest engagement, with subsequent pages showing a decline.
+
+      <figure>
+        <img src="images/bargraph.png" alt="Image description">
+        <figcaption style="text-align: center;"> <i>Bar chart showing time spent on each page of The Daily Hub. </i>
+  </figcaption>
+      </figure>
+
+ 
+     <!-- RECOMMENDATION 2-->
+       <p style="background-color: #E8E9EB; padding: 20px;border-radius: 5px;"> 👍 RECOMMENDATION 2-1 | Add headline titles to improve scannability and attract users to relevant achievements. Help users personalize their experience through sorting and filtering.  </p>
+ <div class="container3">
+  
+  <figure>
+        <img style = "width: 100%;" class = "compare" src="images/og_pic.png" alt="Image description">
+        <figcaption style="text-align: center;"> <i>Pratt's Current Daily Hub Page shows a lot of text that is hard to scan and no functionality is available to filter content</i>
+  </figcaption>
+      </figure>
+      <figure>
+        <img style = "width: 100%;" class = "compare" src="images/pratt_filters.png" alt="Image description">
+        <figcaption style="text-align: center;"> <i>Mockup of proposed design for Pratt's Daily Hub page with filters and headers for each card. </i>
+        </figcaption>
+      </figure>
+       
+
+ </div>
+
+     
+
+    <!--   <p>🔍 Disconnect from programs: Users weren't clicking through to program pages.</p>
+      <p>🔍 Lack of clear CTAs: The "Apply" button's context was unclear.</p>
+      <p>🔍 Outdated content: Pages with older achievements received fewer views.</p> -->
+
+</div>
+     <!--  <h2>RECOMMENDATIONS</h2>
+
+    
+    <h3>Recommendation 1</h3>
+
+    <p>Headline titles: Improve scannability and attract users to relevant achievements.</p>
+    <p>Visual components: Add pictures and gifs to increase engagement.</p>
+    <p>Focus on people and achievements: Highlight individuals, majors, and achievement types.</p>
+    <p>Filter and sort functionality: Allow users to personalize their experience.</p>
+    <p>Archive older content: Keep the page focused on current achievements.</p>
+
+    <h3>Recommendation 2</h3>
+    <p>Embed articles from Pratt websites: Keep users within Pratt's domain.</p>
+    <p>Add clear and contextually relevant CTAs: Guide users towards program pages.</p>
+    <p>"Take the Next Step" banner: Encourage further exploration of Pratt's offerings.</p> -->
+
+<div style="padding: 50px;">
+    <h2>MEASURING SUCCESS</h2>
+    <p>Recommendations would be successful if there is...</p>
+   <li>increased time spent on the Daily Hub.</li>
+    <li>higher overlap of users visiting Daily Hub & program pages.</li>
+    <li>positive user feedback on the redesigned page through surveys or interviews</li>
+
+  <h2>CLIENT FEEDBACK</h2>
+  <img style="width: 100%; height: auto;" src="images/Team_Photo.png" alt="Image description">
+
+<li>They loved the examples from peer institutions</li>
+<li>Helped encourage their brainstorming on how to have more CTAs for lesser viewed pages like the Daily Hub</li>
+<li>They found the Daily Hub recommendations really helpful such as internal links and connecting others pages from Pratt on the Daily Hub</li>
+<li>Overall, they liked that the recommendations for the Daily Hub can be used for other pages as well!</li>
+
+    <h2>CONCLUSION</h2>
+    <p>By implementing these recommendations, Pratt can transform the Daily Hub into a powerful tool for inspiring and converting prospective students. This case study demonstrates a data-driven approach to UX research and design, with clear goals, actionable insights, and measurable outcomes.</p>
+
+  </div>
+
+</div>
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UX Case Study</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
 /*      background-color: #f4f4f4;*/
     }
 
@@ -19,11 +398,7 @@ li, p {
 }
 
     header {
-/*      position: relative;*/
-    /*  text-align: center;
-      color: white;
-      padding: 50px;*/
-/*      background: url('hero.jpeg') center/cover no-repeat;*/
+
       background-image: url('images/hero.jpeg');
     background-size: cover;
     background-position: center;
@@ -231,4 +606,4 @@ li, p {
 
 </body>
 
-</html>
+</html> -->
