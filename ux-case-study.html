@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFWVYDH9LV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-CFWVYDH9LV');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav_styles.css">
+ <!--    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <title>UX Portfolio - Dominique</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+/*            color: #2c3e50;*/
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+    /*    header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }*/
+        h1 {
+            font-size: 2.5rem;
+            color: #283054;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .filters {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        .filter-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background-color: #2980b9;
+        }
+        .category-header {
+            font-size: 1.8rem;
+/*            color: #2c3e50;*/
+            color: #283054;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        .case-studies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .case-study {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .case-study:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .case-study-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        .case-study-content {
+            padding: 1.5rem;
+        }
+        .case-study-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+        .case-study-summary {
+            font-size: 0.9rem;
+            color: #34495e;
+            line-height: 1.6;
+        }
+        .color-1:hover { background-color: #e8f5e9; }
+        .color-2:hover { background-color: #e3f2fd; }
+        .color-3:hover { background-color: #fce4ec; }
+        .color-4:hover { background-color: #fff3e0; }
+    </style>
+</head>
+<body>
+   <header class="header radial-gradient" style="line-height: .8em;">
+            <a style="color: #283054;"class="logo" href="index.html">Dominique Dorvil</a>
+            <ul class="main-nav" style="align-items: center;">
+              <li ><a style="color: #283054;"href="index.html">Home</a></li>
+              <li><a class="is-current"style="color: #283054;"href="ux-case-study.html">Work</a></li>
+               <li><a style="color: #283054;"href="other.html">Art</a></li>
+               <li><a style="color: #283054;"href="about-me.html">About Me</a></li>
+              <li><a style="color: #283054;"href="resume.html">Resume</a></li>
+            </ul>
+    </header>
+
+    <div class="container">
+        <!-- <header> -->
+        <!--     <a style="color: #283054;"class="logo" href="index.html">Dominique Dorvil</a>
+            <ul class="main-nav" style="align-items: center;">
+              <li ><a style="color: #283054;"href="index.html">Home</a></li>
+              <li><a class="is-current"style="color: #283054;"href="art.html">Work</a></li>
+               <li><a style="color: #283054;"href="other.html">Art</a></li>
+               <li><a style="color: #283054;"href="about-me.html">About Me</a></li>
+              <li><a style="color: #283054;"href="resume.html">Resume</a></li>
+            </ul> -->
+            <h1 class="page-title">UX Portfolio</h1>
+
+        <!-- </header> -->
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="ux-writing">UX Writing</button>
+            <button class="filter-btn" data-filter="ux-research">UX Research</button>
+            <button class="filter-btn" data-filter="ux-design">UX Design</button>
+        </div>
+
+         <h2 class="category-header">UX Design</h2>
+        <div class="case-studies">
+          <a href="https://ixd.prattsi.org/2024/05/how-i-built-a-reddit-design-system-in-15-weeks/" target="_blank">
+            <div class="case-study color-3" data-category="ux-design">
+                <div class="case-study-image" style="background-image: url('images/Reddit_Cover.png');"></div>
+                <div class="case-study-content">
+                    <h2 class="case-study-title">Reddit Design System Case Study</h2>
+                    <p class="case-study-summary">Launched the first Reddit UI Kit on Figma Community, amassing 903 active users under 6 months</p>
+                </div>
+            </div>
+        </a>
+          
+            <a href="https://ixd.prattsi.org/2023/05/improving-the-user-experience-of-smithsonian-institute-traveling-exhibition-services-sites/" target="_blank">
+            <div class="case-study color-1" data-category="ux-design">
+                <div class="case-study-image" style="background-image: url('images/museum.png');"></div>
+                <div class="case-study-content">
+                    <h2 class="case-study-title">Smithsonian Museum Case Study</h2>
+                    <p class="case-study-summary">The Smithsonian Museum Traveling Exhibition requested that we find out what their users want to them to improve on their website..</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- <a href=""> -->
+          <div class="case-study color-4" data-category="ux-design" >
+                <div class="case-study-image" style="background-image: url('images/coming_soon.jpg');"></div>
+                <div class="case-study-content">
+                    <h2 class="case-study-title">Bank of New York Mellon Design System</h2>
+                    <p class="case-study-summary">Designed a component library and achieved a 60% adoption rate among the design and development team.</p>
+                </div>
+            </div> 
+            <!-- </a> -->
+            <!-- <div class="case-study color-2" data-category="ux-design">
+                <div class="case-study-image" style="background-image: url('/api/placeholder/400/200');"></div>
+                <div class="case-study-content">
+                    <h2 class="case-study-title">Travel Booking Wizard</h2>
+                    <p class="case-study-summary">Streamlined the booking process for a travel agency, reducing abandonment rates by 30% and increasing customer satisfaction.</p>
+                </div>
+            </div>
+            <div class="case-study color-3" data-category="ux-design">
+                <div class="case-study-image" style="background-image: url('/api/placeholder/400/200');"></div>
+                <div class="case-study-content">
+                    <h2 class="case-study-title">Educational Platform UX</h2>
+                    <p class="case-study-summary">Redesigned an e-learning platform to enhance student engagement and improve course completion rates by 50%.</p>
+                </div>
+            </div>
+            <div class="case-study color-4" data-category="ux-design">
+                <div class="case-study-image" style="background-image: url('/api/placeholder/400/200');"></div>
+                <div class="case-study-content">
+                    <h2 class="case-study-title">Smart Home App</h2>
+                    <p class="case-study-summary">Developed a user-friendly interface for controlling smart home devices, leading to a 60% increase in daily active users.</p>
+                </div>
+            </div> -->
+        </div>
+
+        <h2 class="category-header">UX Writing</h2>
+        <div class="case-studies">
+           <a href="say_cheese.html" target="_blank">
+            <div class="case-study color-1" data-category="ux-writing">
+                <div class="case-study-image" style="background-image: url('images/cheeselogo.png');"></div>
+                <div class="case-study-content">
+                    <h2 class="case-study-title">Style Guide For Cheese Boutique</h2>
+                    <p class="case-study-summary">Wrote/designed the copy for key elements of a prototype website dedicated to selling boutique cheese. (Logo by DALLE)</p>
+                </div>
+            </div>
+            </a> 
+            <a href="https://docs.google.com/presentation/d/1pAfsZY9XMPa2PilYSr65SiSyMejZrasb1JunCRjB1xc/edit?usp=sharing" target="_blank">
+                <div class="case-study color-2" data-category="ux-writing">
+                    <div class="case-study-image" style="background-image: url('images/lemon8.png');"></div>
+                    <div class="case-study-content">
+                        <h2 class="case-study-title">Lemon8 Product Audit</h2>
+                        <p class="case-study-summary">Developed a comprehensive product audit on Lemon8.</p>
+                    </div>
+                </div>
+            </a>
+           <!--  <div class="case-study color-3" data-category="ux-writing">
+                <div class="case-study-image" style="background-image: url('/api/placeholder/400/200');"></div>
+                <div class="case-study-content">
+                    <h2 class="case-study-title">Localization Project</h2>
+                    <p class="case-study-summary">Led the localization efforts for a global app, resulting in a 40% increase in international user acquisition.</p>
+                </div>
+            </div> -->
+        </div>
+
+        <h2 class="category-header">UX Research</h2>
+        <div class="case-studies">
+            <a href="https://docs.google.com/presentation/d/1dM4mCMjHsEYVEa0VquC3uKYRbUIIp-2s15GszAL9OYM/edit?usp=sharing" target="_blank">
+                <div class="case-study color-1" data-category="ux-research">
+                    <div class="case-study-image" style="background-image: url('images/bkm.png');"></div>
+                    <div class="case-study-content">
+                        <h2 class="case-study-title">Ethnography Research: Brooklyn Museum</h2>
+                        <p class="case-study-summary">Conducted a 25-person study to understand Brooklyn Museum visitor engagement via diaries, interviews, and observations.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://docs.google.com/presentation/d/168AF_TMONMQa7YNlufeNiD3HhPOl-3vfZ8In-ZVFsZw/edit?usp=sharing" target="_blank">
+                <div class="case-study color-4" data-category="ux-research">
+                    <div class="case-study-image" style="background-image: url('images/wnrs.png');"></div>
+                    <div class="case-study-content">
+                        <h2 class="case-study-title">Unmoderated Testing for We're Not Really Strangers</h2>
+                        <p class="case-study-summary">I conducted an testing session using Usertesting.com and used the data to inform a redesign.</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="dms.html" target="_blank">
+                <div class="case-study color-2" data-category="ux-research">
+                    <div class="case-study-image" style="background-image: url('images/hero.jpeg');"></div>
+                    <div class="case-study-content">
+                        <h2 class="case-study-title">Web Analytics on Pratt's Relaunch</h2>
+                        <p class="case-study-summary">Performed in-depth competitive analysis that informed product strategy, leading to a 15% market share increase.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+       
+    </div>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const caseStudies = document.querySelectorAll('.case-study');
+        const categoryHeaders = document.querySelectorAll('.category-header');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                caseStudies.forEach(study => {
+                    if (filter === 'all' || study.getAttribute('data-category') === filter) {
+                        study.style.display = 'block';
+                    } else {
+                        study.style.display = 'none';
+                    }
+                });
+
+                categoryHeaders.forEach(header => {
+                    if (filter === 'all' || header.textContent.toLowerCase().includes(filter)) {
+                        header.style.display = 'block';
+                    } else {
+                        header.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+      <script src="js/menu-highlighter.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
