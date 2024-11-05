@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CFWVYDH9LV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-CFWVYDH9LV');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav_styles.css">
+
+    <title>Brooklyn Museum UX Case Study: </title>
+    <style>
+        .case_study_content {
+            font-family: Poppins, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+        .case_study_title{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+
+        .side-by-side-image-container {
+          display: flex;
+          justify-content: space-between;
+          width: 50%;
+          gap: 20px;
+        }
+
+
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            background-image: url('images/bkm.png');
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 40px;
+        }
+        .project-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .project-details > div {
+            flex: 1 1 200px;
+            padding: 0 15px;
+            margin-bottom: 20px;
+        }
+        .project-details h3 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .content {
+            max-width: 100%;
+            margin-right: 0;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: #f1c40f;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+      .section-title {
+        color: #283054;
+        margin: 3rem 0 1.5rem 0;
+        font-size: 2rem;
+    }
+
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .stat-card {
+        background: white;
+        border-radius: 12px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .stat-card h3 {
+        color: #283054;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .stat-card p {
+        margin: 0.5rem 0;
+        color: #555;
+    }
+
+    .quote-block {
+        border-left: 4px solid #4a90e2;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
+        background: #f5f8fc;
+        font-style: italic;
+        border-radius: 0 8px 8px 0;
+        transition: transform 0.2s;
+    }
+
+    .quote-block:hover {
+        transform: translateX(10px);
+    }
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+        .nav-arrow {
+            font-size: 2em;
+            text-decoration: none;
+            color: #3498db;
+            padding: 10px 20px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .nav-arrow:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        .table-of-contents {
+            text-align: right;
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 150px;
+            background-color: rgba(248, 249, 250, 0.8);
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 0.8em;
+            line-height: 1.4;
+            z-index: 1000;
+        }
+        .table-of-contents h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            border-bottom: 1px solid #3498db;
+            padding-bottom: 5px;
+            font-size: 1em;
+        }
+        .table-of-contents ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .table-of-contents li {
+            margin-bottom: 5px;
+        }
+        .table-of-contents a {
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s;
+        }
+        .table-of-contents a:hover {
+            color: #2c3e50;
+        }
+
+         .recommendations-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+    }
+
+    .recommendation-card {
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 1.5rem;
+        transition: all 0.2s;
+    }
+
+    .recommendation-card:hover {
+        background-color: #f8f9fa;
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .recommendation-card h3 {
+        color: #283054;
+        margin-bottom: 1rem;
+    }
+
+    .recommendation-card ul {
+        list-style-position: inside;
+        padding-left: 1rem;
+    }
+
+    .recommendation-card li {
+        margin: 0.5rem 0;
+        color: #555;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            padding: 1rem;
+        }
+
+        .stats-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .recommendations-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header class="header radial-gradient">
+         <a style="color: #283054;"class="logo" href="index.html">Dominique Dorvil</a>
+            <ul class="main-nav" style="align-items: center;">
+              <li ><a style="color: #283054;"href="index.html">Home</a></li>
+              <li><a class="is-current"style="color: #283054;"href="ux-case-study.html">Work</a></li>
+               <li><a style="color: #283054;"href="other.html">Art</a></li>
+               <li><a style="color: #283054;"href="about-me.html">About Me</a></li>
+              <li><a style="color: #283054;"href="resume.html">Resume</a></li>
+            </ul>
+    </header>
+    <div class="case_study_content">
+        <div class="case_study_title">
+         <h1>UX Case Study: Brooklyn Museum Ethnographic Research</h1>
+        </div>
+
+        <div class="hero-image"></div>
+
+        <nav class="table-of-contents">
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#project-details">Project Details</a></li>
+                <li><a href="#overview">Overview</a></li>
+
+                <li><a href="#methodology">Methodology</a></li>
+                <li><a href="#research-goal">Research Goal</a></li>
+                <li><a href="#personas">Personas</a></li>
+                <li><a href="#survey-insights">Survey Insights</a></li>
+
+                <li><a href="#diary-study-insights">Diary Study Insights</a></li>
+                <li><a href="#particpatory-research-insights">Participatory Research Insights</a></li>
+                <li><a href="#issues-solutions">Issues & Solutions</a></li>
+<!-- 
+                <li><a href="#ideation">Ideation</a></li>
+                <li><a href="#design-process">Design Process</a></li>
+                <li><a href="#solution">Solution</a></li>
+                <li><a href="#impact">Impact</a></li> -->
+                <li><a href="#lessons">Lessons</a></li>
+                <li><a href="#next-steps">Next Steps</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <!-- Case study contents -->
+            <!-- ... -->
+
+             <section id="project-details" class="project-details">
+                <div>
+                    <h3>⏰Timeline</h3>
+                    <p>Jan 2024 - May 2024</p>
+                    <!-- <p>[Duration] weeks/months</p> -->
+                </div>
+                <div>
+                    <h3>👩🏽‍🔬My Role</h3>
+                    <p>Ethnographic Researcher</p>
+                    <!-- <p>[Additional responsibilities]</p> -->
+                </div>
+                <div>
+                    <h3>🛠Tools Used</h3>
+                    <ul>
+                        <li>Google Forms</li>
+                        <li>Miro</li>
+                       <!--  <li>Adobe XD</li>
+                        <li>[Other tools]</li> -->
+                    </ul>
+                </div>
+                <div>
+                    <h3>👤Team Member(s)</h3>
+                    <ul>
+                        <li>Dominique Dorvil</li>
+                       <!--  <li>[Team Member 2] - [Role]</li>
+                        <li>[Team Member 3] - [Role]</li> -->
+                    </ul>
+                </div>
+            </section>
+
+            <section id="research-goal" class="section">
+                <h2>1. Research Goal</h2>
+                <p style="font-size: 20px;">How might we identify and propose effective strategies for improving visitor experience and engagement at the Brooklyn Museum, that improve <span style="font-weight: bold;"> wayfinding, information accessibility, crowd management, and labeling </span>?
+                </p>
+            </section>
+
+            <section id="recommendations" class="section">
+                <h2>2. Recommended Solutions</h2>
+                <div class="recommendations-grid">
+                    <div class="recommendation-card">
+                        <!-- add the boxes of the recommendations -->
+                        <h3>Interactive Digital Mapping</h3>
+                        <ul>
+                            <li>GPS-enabled navigation</li>
+                            <li>Real-time updates</li>
+                            <li>Sustainable alternative to paper maps</li>
+                        </ul>
+                    </div>
+                    <div class="recommendation-card">
+                        <h3>Enhanced Label System</h3>
+                        <ul>
+                            <li>Proportional sizing relative to artwork</li>
+                            <li>Strategic placement to prevent alarm triggering</li>
+                            <li>Clear explanatory text</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="recommendation-card">
+                        <h3>Exhibition Communication</h3>
+                        <ul>
+                            <li>Regular updates about new exhibitions</li>
+                            <li>Clear communication about rotating collections</li>
+                            <li>Improved digital presence</li>
+                        </ul>
+                    </div> -->
+                    <div class="recommendation-card">
+                        <h3>Lighting & Wayfinding Improvements</h3>
+                        <ul>
+                            <li>Signs placed above eye level</li>
+                            <li>Proper lighting that prevent glare on art</li>
+                            <li>Lighting and larger font sizes to enable reading of placards</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="overview" class="section">
+                <h2>9. Overview</h2>
+                <p  style="font-size: 20px;">The Brooklyn museum is an art museum in Brooklyn, New York, making it the biggest cultural institution in that borough. It is also the  2nd largest museum in New York City. <span style="font-weight: bold;"> The client has expressed interest in uncovering the pain points experienced by the museum's visitors and solutions to them. </span> </p>
+            </section>
+
+
+            <section id="methodology" class="section">
+                <h2>3. Methodology</h2>
+            
+              <!-- add the boxes of the the research methods -->
+                <!-- <h2 class="section-title">Research Demographics</h2> -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Survey</h3>
+                        <p><strong>Participants:</strong> 7</p>
+                        <p><strong>Recent Visits:</strong> 50% within past 3 months</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Participatory Research</h3>
+                        <p><strong>Participants:</strong> 13 Reddit Users</p>
+                        <p><strong>Experience:</strong> 100% "First Saturday" event attendees</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Diary Study</h3>
+                        <p><strong>Participants:</strong> 2 </p>
+                        <p><strong>Experience:</strong> Conducted the study on "First Saturday" event</p>
+
+                    </div>
+                    <div class="stat-card">
+                        <h3>Interviews</h3>
+                        <p><strong>In Depth Interview Participants:</strong> 2 </p>
+                        <p><strong>Ad Hoc Interview Participants:</strong> 4 </p>
+                        <p><strong>Age Range:</strong> 24-60 years</p>
+                        <p><strong>Membership:</strong> 100% non-members</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section id="personas" class="section">
+                <h2>4. Personas</h2>
+                <div class="side-by-side-image-container ">
+                    <!-- these two images side by side -->
+                    <img src="images/bkm_persona_1.png">
+                    <img src="images/bkm_persona_2.png">
+                </div>
+                <figcaption style="text-align: center;">Left: Persona 1 | Right: Persona 2</figcaption>
+            </section>
+
+            <section id="diary-insights" class="section">
+                <h2>5. Diary Study Insights</h2>
+                <img src="images/diary_prompt.png">
+                <img src="images/diary_insights_1.png">
+                <img src="images/diary_insights_2.png">
+
+            </section>
+
+            <section id="participatory-research-insights" class="section">
+                <h2>6. Participatory Research Insights</h2>
+                <p style="font-size: 20px;">The participatory research conducted through surveys and Reddit comments revealed that visitors' concerns extended beyond basic facility navigation. Through analysis of visitor search patterns, I identified common queries that pointed to systemic issues and created a Google Search to represent them.</p>
+                <img src="images/participatory_research_results.png">
+            </section>
+
+            <section id="issues-solutions" class="section">
+                <!-- <h2>2. Key Pain Points Identified</h2> -->
+            
+              <!-- add the quotes of the participants -->
+
+              <h2 class="section-title">7. Issues & Solutions</h2>
+
+              <!-- <p style="font-size: 20px;"> </p> -->
+
+              <h3>WAYFINDING ISSUES</h3>
+                <div class="quote-block">
+                    "Bathroom signs aren't obvious and hard to come by. This is the #1 question staff get asked." - Brooklyn Museum Receptionist
+                </div>
+
+                <img src="images/paper_map.png">
+
+                <h3>WAYFINDING SOLUTIONS</h3>
+                <img src="images/map_solulu.png">
+                <img src="images/interactive_map.png">
+
+                <h3>SMALL LABEL ISSUE & SOLUTION</h3>
+                    <div class="quote-block">
+                        "I wish the labels for certain pieces were bigger especially because if you move too close to read it can trigger an alarm." - Survey Respondent
+                    </div>
+
+                    <img src="images/label_issue.png">
+                    <figcaption>Compared to the painting, the label is too small. The painting is big enough to be seen from afar (great for crowds) but the text can only be seen up close.</figcaption>
+
+                    <h3>SMALL LABEL SOLUTION</h3>
+
+                    <p style="font-size: 20px;"> <span style="font-weight: bold;"> increase font size </span> to improve legibility and ensure that the placard size is relative to the art peice.</p>
+
+
+                <h3>INFORMATION ACCESSIBILITY</h3>
+                    <div class="quote-block">
+                        "The wall text is always in English." - Interviewee
+                    </div>
+
+                    <img src="images/lighting_issues.png">
+
+
+                     <div class="quote-block">
+                        "Poor lighting in the main exhibition hall. Most likely because the paintings were older but still put a damper on the experience." - Survey Respondent
+                    </div>
+
+                    <img src="images/lighting_solulu.png">
+
+              <!-- add the pictures of participants stuff -->
+
+            </section>
+
+            <section id="lessons" class="section">
+            <h2>8. Lessons Learned</h2>
+             <ol>  
+                <li style="font-size: 20px;"> Conducting diary studies can be difficult because without your supervision, participants can <span style="font-weight: bold;"> blow you off</span>. 6 participants committed to conduct the diary study but only 2 people actually did it. </li>
+
+                <li style="font-size: 20px;">Participants <span style="font-weight: bold;"> LOVE </span> incentives.</li>
+
+                <li style="font-size: 20px;">While participants are experts of their own experiences, they state their opinions as facts.</li>
+            </ol>
+        </section>
+
+            <section id="next-steps" class="section">
+                <h2>9. Next Steps</h2>
+                <p style="font-size: 20px;">Out of the 6 actionable recommendations I developed to enhance visitor engagement, accessibility, and overall museum experience, <span style="font-weight: bold;"> the client has expressed interest in implementing at least 50% of these recommendations. </span> </p>
+            </section>
+
+        </div>
+</div>
+    <footer>
+        <p>© 2024 Dominique Dorvil - Senior UX Designer</p>
+    </footer>
+</body>
+</html>
