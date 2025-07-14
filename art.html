@@ -17,6 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="nav_styles.css">
 	<link rel="stylesheet" href="css/main_page.css">
+      <link rel="stylesheet" href="footer_styles.css">
 
 </head>
 <body>
@@ -32,7 +33,7 @@
     </ul>
 </header>
 
-<h1 style="text-align: center;">Art</h1>
+<!-- <h1 style="text-align: center;">Art</h1>
 <div style="text-align: center;">(scroll to start the show)</div>
         <div class="part" data-background="#ff6b6b">
             <div class = "jumbotron">
@@ -49,7 +50,7 @@
               <div class="content">
                 <h2 style="text-align: center;">Painting</h2>
                   <figure>
-                    <img style="text-align: center;" src="images/Among Us.jpg" width = "400" height = "500"
+                    <img style="text-align: center;" src="images/Among Us.jpg" style="max-width: 300px; width: 100%; height: auto;"
                       alt="self portrait of myself in outer space with among us characters">
                     <figcaption style="font-size: 18px;">This is an original hand painted self portrait that reflects my love for the Among Us video game.</figcaption>
                   </figure>
@@ -63,14 +64,14 @@
               <div class="content">
                 <h2 style="text-align: center;">3D Art</h2>
                 <div style="text-align: center;" class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/054a55a876b346c18bccf34c49f2259e/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    <iframe title="A 3D model" style="max-width: 100%; height: auto;" src="https://sketchfab.com/models/054a55a876b346c18bccf34c49f2259e/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
     <a href="https://sketchfab.com/3d-models/bear-054a55a876b346c18bccf34c49f2259e?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Bear</a>
     by <a href="https://sketchfab.com/ddorvil?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">ddorvil</a>
     on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campaign=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a>
 </p>
-</div>
+</div> -->
               </div>
             </div>
         </div>
@@ -89,5 +90,40 @@
     <script src="js/scripts.js"></script>
       <script src="js/menu-highlighter.js"></script>
 
+
+<div class="part" data-background="#ffffff">
+  <div class="jumbotron">
+    <div class="content">
+      <h2 style="text-align: center; color: black;">Art</h2>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+        <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+          <img src="images/Among Us.jpg" alt="Placeholder image" style="max-width: 100%; height: auto;">
+          <figcaption>Self portrait Acrylic painting</figcaption>
+        </div>
+        <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+          <img src="images/talkingsh$t.gif" alt="Placeholder image" style="max-width: 100%; height: auto;">
+          <figcaption>Digital Art</figcaption>
+        </div>
+        <div style="flex: 1 1 250px; max-width: 300px; text-align: center;">
+          <!-- <img src="images/placeholder.png" alt="Placeholder image" style="max-width: 100%; height: auto;"> -->
+          <iframe title="A 3D model" style="max-width: 100%; height: auto;" src="https://sketchfab.com/models/054a55a876b346c18bccf34c49f2259e/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+          <figcaption>3D Modeling</figcaption>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <footer class="site-footer">
+  <div class="footer-left">
+    <!-- <span id="email-link" data-tooltip="Click to copy email">Email</span> | -->
+
+     <span>decile14@gmail.com | </span>
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+  </div>
+  <div class="footer-right">
+    © Dominique Dorvil
+  </div>
+</footer>
 </body>
 </html>
